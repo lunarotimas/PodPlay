@@ -40,6 +40,7 @@ class PodcastActivity : AppCompatActivity(),
         setupToolbar()
         setupViewModels()
         updateControls()
+        handleIntent(intent)
     }
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // 1
