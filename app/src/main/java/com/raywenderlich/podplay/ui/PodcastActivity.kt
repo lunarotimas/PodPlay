@@ -32,6 +32,10 @@ class PodcastActivity : AppCompatActivity(),
     private val searchViewModel by viewModels<SearchViewModel>()
     private lateinit var podcastListAdapter: PodcastListAdapter
 
+    companion object {
+        private const val TAG_DETAILS_FRAGMENT = "DetailsFragment"
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         databinding = ActivityPodcastBinding.inflate(layoutInflater)
@@ -122,4 +126,6 @@ class PodcastActivity : AppCompatActivity(),
     ) {
         // Not implemented yet
     }
+
+
     }
