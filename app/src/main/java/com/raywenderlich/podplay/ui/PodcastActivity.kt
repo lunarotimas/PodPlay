@@ -27,6 +27,7 @@ class PodcastActivity : AppCompatActivity() {
         binding = ActivityPodcastBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setupToolbar()
     }
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // 1
@@ -67,5 +68,9 @@ class PodcastActivity : AppCompatActivity() {
         super.onNewIntent(intent)
         setIntent(intent)
         handleIntent(intent)
+    }
+
+    private fun setupToolbar() {
+        setSupportActionBar(binding.toolbar)
     }
     }
